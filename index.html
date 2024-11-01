@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expiring Local Storage</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <form id="save-form">
+      <input type="text" name="key" placeholder="Enter key">
+      <textarea name="value" cols="30" rows="10" placeholder="Enter value"></textarea>
+      <input type="number" name="max-age" placeholder="Max age in seconds">
+      <button type="submit">Save</button>
+      <output name="result"></output>
+    </form>
+    <hr>
+    <form id="load-form">
+      <input type="text" name="key" placeholder="Enter key to load">
+      <button type="submit">Load</button>
+      <textarea name="value" cols="30" rows="10" readonly placeholder="Loaded value will appear here"></textarea>
+      <output name="result"></output>
+    </form>
+  </main>
+</body>
+
+</html>
